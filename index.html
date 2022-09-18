@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Welcome To Oak Desk</title>
+</head>
+
+<body>
+    <div id="failure" class="alert alert-danger alert-dismissible fade " role="alert">
+        <strong>Error</strong> Your Form Has not been Submitted due to some unvalid inputting
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+
+    <div id="success" class="alert alert-success alert-dismissible fade " role="alert">
+        <strong>Success</strong> Your Form Has not been Submitted Successfuly
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="container">
+
+        <h1>Oak Inquary Journey</h1>
+
+        <div class="mb-3">
+            <label for="name" class="form-label ">Enter Name</label>
+            <input type="text" class="form-control " id="name" placeholder="Enter Your Name">
+          <small id="nameinvalid" class="form-text text-muted">Your username must be 2-20 characters long and should not start
+               with number</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email Addess">
+            <small id="nameinvalid" class="form-text text-muted">Your Email must valid </small>
+        </div>
+        <div class="mb-3">
+
+            <div class="mb-3">
+                <label for="number" class="form-label">Enter number</label>
+                <input type="text" class="form-control" id="number" placeholder="Enter Your Phone Number">
+                <small id="nameinvalid" class="form-text text-muted">Your phone no. must be 10 digit long and should not contain any character
+                    </small>
+            </div>
+
+
+            <div id="select1">
+                <select class="form-select id=" car" multiple aria-label="select Multiple cars options">
+                    <option selected>select your car </option>
+                    <option value="1">Audi</option>
+                    <option value="2">Bugati</option>
+                    <option value="3">Rang Rover</option>
+                </select>
+            </div>
+
+            <!-- <div class="form-control my-3">
+                <label for="car">Select Your Car</label>
+                <select class="form-control" id="car"></select>
+                    <option value="1">Audi</option>
+                    <option value="2">Bugati</option>
+                    <option value="3">Rang Rover</option>
+
+            </div> -->
+
+            <label for="exampleFormControlTextarea1" class="form-label my-3"> Enter Your Address</label>
+            <textarea class="form-control" id="address" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter Your Concern regarding Travel
+                Journey</label>
+            <textarea class="form-control" id="travel" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" id="btn">Sumbit</button>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+<script src="/index.js"></script>
+
+</html>
